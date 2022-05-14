@@ -1,0 +1,67 @@
+.header {
+}
+.header__container {
+}
+
+.header__body {
+  min-height: 90px;
+  display: flex;
+  @include flex(1);
+  // align-items: center;
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+}
+
+.header__logo {
+  margin: 0px 35px;
+  // @include flex (1);
+}
+.header__title {
+}
+.visuallyhidden {
+}
+.logo {
+}
+.logo-object {
+}
+.header__contacts {
+  display: flex;
+  // padding: 36px 30px 35px;
+  // @include flex (1);
+}
+.contact-header {
+}
+.contact-header__item {
+  margin: 0px 30px;
+}
+.contact-header__link {
+}
+.visually-impaired {
+}
+.button {
+}
+.visually-impaired__btn {
+}
+.contact-header__btn {
+}
+.btn_icon {
+}
+.btn_text {
+}
+.header__social {
+  display: flex;
+  // @include flex (1);
+}
+.networks {
+}
+.network {
+  margin: 0px 28px;
+}
+.network_vk {
+}
+.network_youtube {
+}
+.network_facebook {
+}
+.network_instagram {
+}

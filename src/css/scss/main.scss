@@ -2,10 +2,9 @@
 // Может называться utilities или  helpers.
 // Все инструменты и хелперы. Не должна создавать CSS при компиляции.
 
-// @import "abstracts/variables";
-// @import "abstracts/functions";
-// @import "abstracts/mixins";
-// @import "abstracts/placeholders";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
 
 // 2. Vendors
 // Содержит все CSS-файлы из внешних библиотек и фреймворков: Normalize, Bootstrap, jQueryUI, etc.
@@ -16,18 +15,17 @@
 // Общие шаблоны проекта, стандартные стили, типографские правила.
 
 @import 'base/typography';
-// @import 'base/base';
+@import 'base/base';
+
 
 // 4. Layout
 // elements ???
 // ОСНОВНЫЕ. Всё, что принимает в постройке раскладки сайта или приложения.
 // Стили для основных частей сайта, сетка или даже CSS-стили для всех форм.
 
-// background ???
-
+@import 'layout/header';
 // @import 'layout/navigation';
 // @import 'layout/grid';
-// @import 'layout/header';
 // @import 'layout/footer';
 // @import 'layout/sidebar';
 // @import 'layout/forms';
@@ -39,7 +37,7 @@
 
 // buttons, carousel, cover, dropdown, media, thumbnails, etc.
 
-// @import "components/buttons";
+@import "components/buttons";
 
 // 6. Pages
 // Если есть стили, зависящие от страницы, то лучше положить их в отдельный файл.
@@ -54,3 +52,15 @@
 // default, admin, dark, etc.
 
 // @import "themes/dark.scss";
+
+// .logo-path {
+//     @extend %transition;
+// }
+// .logo-svg {
+//     cursor: pointer;
+//     &:hover {
+//         .logo-path {
+//             fill: $color-main;
+//         }
+//     }
+// }
