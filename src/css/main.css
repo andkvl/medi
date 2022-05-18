@@ -404,7 +404,7 @@ p {
   border-radius: 50%;
 }
 
-.services__container {
+.services {
   background-color: #4fbfa5;
 }
 
@@ -427,6 +427,7 @@ p {
   font-weight: 500;
   font-style: normal;
   padding-bottom: 38px;
+  color: #ffffff;
 }
 
 .promo-service {

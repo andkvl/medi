@@ -1,7 +1,7 @@
 .services {
+    background-color: $color-additional;
 }
 .services__container {
-  background-color: $color-additional;
 }
 .services__body {
   display: flex;
@@ -16,6 +16,7 @@
 .services__text {
   @include font(1.4rem, 2.1rem);
   padding-bottom: 38px;
+  color: $color-light;
 }
 .services__btn {
 }
