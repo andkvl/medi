@@ -1,26 +1,30 @@
 .button {
-    @include font (1.8rem, 2.1rem);
-    color: $color-light;
-    @extend %transition;
-    &_visually-impaired {
-        min-width: 270px;
-        background: $color-main;
-        text-transform: uppercase;
-        @include font (1.4rem, 1.6rem);
-        padding: 10px 15px 8px 15px;
-        display: flex;
-        > .btn_icon {
-            width: 26px;
-            height: 22px;
-            margin-right: 10px;
-            background-image: url(/src/images/header/eye.svg);
-            background-repeat: no-repeat;
-        }
-        > .btn-text {
-            @include font (1.4rem, 1.65rem);
-        }
-        &:hover {
-            background: $color-additional;
-        }
+  @include font(1.8rem, 2.1rem);
+  color: $color-light;
+  @extend %transition;
+  &_visually-impaired {
+    min-width: 270px;
+    background: $color-main;
+    text-transform: uppercase;
+    @include font(1.4rem, 1.6rem);
+    padding: 10px 15px 8px 15px;
+    display: flex;
+    > .btn_icon {
+      width: 26px;
+      height: 22px;
+      margin-right: 10px;
+      background-image: url(/src/images/header/eye.svg);
+      background-repeat: no-repeat;
     }
+    > .btn-text {
+      @include font(1.4rem, 1.65rem);
+    }
+    &:hover {
+      background: $color-additional;
+    }
+  }
+}
+.menu__btn {
+    @include font (1.8rem, 2.1rem);
+    color: $color-text;
 }

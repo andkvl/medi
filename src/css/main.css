@@ -318,6 +318,14 @@ h2 {
   align-items: center;
 }
 
+.menu__link {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+}
+
 .header__body {
   min-height: 90px;
   display: flex;
@@ -365,6 +373,10 @@ h2 {
   border-radius: 50%;
 }
 
+.services__container {
+  background-color: #4fbfa5;
+}
+
 .button {
   font-size: 1.8rem;
   line-height: 2.1rem;
@@ -398,6 +410,14 @@ h2 {
 }
 .button_visually-impaired:hover {
   background: #4fbfa5;
+}
+
+.menu__btn {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+.menu {
+}
+.menu__list {
+}
+.menu__item {
+}
+.menu__link {
+    @include font (1.8rem, 2.7rem);
+    color: $color-light;
+}
+
+.menu__btn {
+    // смотри в _buttons
+}
