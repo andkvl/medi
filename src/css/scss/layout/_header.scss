@@ -6,14 +6,16 @@
 .header__body {
   min-height: 90px;
   display: flex;
-  @include flex(1);
+  @include flex(1, 1, 100%);
   // align-items: center;
   border-left: 1px solid $color-border;
   border-right: 1px solid $color-border;
 }
 
 .header__logo {
-  margin: 0px 35px;
+  // margin: 0px 35px;
+  padding: 0px 35px;
+  align-self: center;
   // @include flex (1);
 }
 .header__title {
@@ -25,16 +27,40 @@
 .logo-object {
 }
 .header__contacts {
-  display: flex;
   // padding: 36px 30px 35px;
   // @include flex (1);
 }
 .contact-header {
+  display: flex;
+  white-space: nowrap;
+  // align-items: center;
 }
 .contact-header__item {
-  margin: 0px 30px;
+  // margin: 0px 30px;
+  padding: 0px 30px;
+  border-left: 1px solid $color-border;
+  display: flex;
+  align-items: center;
 }
 .contact-header__link {
+  // display: inline-block;
+  @include font (1.6rem, 1.9rem);
+  &_circle {
+    display: flex;
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $color-additional;
+      background-image: url(/src/images/header/triangle.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 15px;
+      border-radius: 50%;
+    }
+  }
+
 }
 .visually-impaired {
 }
@@ -49,19 +75,5 @@
 .btn_text {
 }
 .header__social {
-  display: flex;
   // @include flex (1);
-}
-.networks {
-}
-.network {
-  margin: 0px 28px;
-}
-.network_vk {
-}
-.network_youtube {
-}
-.network_facebook {
-}
-.network_instagram {
 }
