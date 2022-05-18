@@ -1,12 +1,21 @@
 .menu {
 }
 .menu__list {
+    display: flex;
+    align-items: center;
 }
 .menu__item {
+    &:first-child {
+        // padding-left: 60px;
+        margin-left: 60px;
+    }
 }
 .menu__link {
     @include font (1.8rem, 2.7rem);
     color: $color-light;
+    &:first-child {
+        padding-right: 65px;
+    }
 }
 
 .menu__btn {

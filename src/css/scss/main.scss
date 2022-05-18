@@ -23,6 +23,7 @@
 // ОСНОВНЫЕ. Всё, что принимает в постройке раскладки сайта или приложения.
 // Стили для основных частей сайта, сетка или даже CSS-стили для всех форм.
 
+@import "layout/layout";
 @import "layout/networks";
 @import "layout/menu";
 @import "layout/header";

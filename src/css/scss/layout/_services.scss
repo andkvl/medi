@@ -1,21 +1,37 @@
 .services {
 }
 .services__container {
-    background-color: $color-additional;
+  background-color: $color-additional;
 }
 .services__body {
+  display: flex;
+  justify-content: space-between;
 }
 .services__content {
+  padding-right: 120px;
 }
 .services__title {
+  padding: 133px 0px 20px;
 }
 .services__text {
+  @include font(1.4rem, 2.1rem);
+  padding-bottom: 38px;
 }
 .services__btn {
 }
 .services__promo {
 }
 .promo-service {
-}
-.layout-3-column {
+    padding: 24px 0px;
+    @include font (2.1rem, 3.15rem);
+    color: $color-light;
+    text-align: center;
+    @extend %transition;
+    &:nth-child(odd) {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: $color-main;
+    }
+    &:hover {
+        color: $color-text;
+    }
 }

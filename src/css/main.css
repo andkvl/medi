@@ -1,4 +1,4 @@
-.button {
+.button, .promo-service {
   transition: all 0.3s ease 0s;
 }
 
@@ -233,6 +233,8 @@ ol {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img,
@@ -307,6 +309,23 @@ h2 {
   font-style: normal;
 }
 
+p {
+  margin: 0;
+}
+
+.layout-3-column {
+  display: flex;
+}
+
+.layout-3-column_big {
+  flex: 2 1 auto;
+  padding: 24px 17px;
+}
+
+.layout-3-column_small {
+  flex: 1 1 auto;
+}
+
 .networks {
   display: flex;
 }
@@ -318,6 +337,15 @@ h2 {
   align-items: center;
 }
 
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item:first-child {
+  margin-left: 60px;
+}
+
 .menu__link {
   font-size: 1.8rem;
   line-height: 2.7rem;
@@ -325,9 +353,12 @@ h2 {
   font-style: normal;
   color: #ffffff;
 }
+.menu__link:first-child {
+  padding-right: 65px;
+}
 
 .header__body {
-  min-height: 90px;
+  min-height: 87px;
   display: flex;
   flex: 1 1 100%;
   border-left: 1px solid #c4c4c4;
@@ -377,6 +408,44 @@ h2 {
   background-color: #4fbfa5;
 }
 
+.services__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__content {
+  padding-right: 120px;
+}
+
+.services__title {
+  padding: 133px 0px 20px;
+}
+
+.services__text {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  font-style: normal;
+  padding-bottom: 38px;
+}
+
+.promo-service {
+  padding: 24px 0px;
+  font-size: 2.1rem;
+  line-height: 3.15rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+}
+.promo-service:nth-child(odd) {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #00868a;
+}
+.promo-service:hover {
+  color: #000000;
+}
+
 .button {
   font-size: 1.8rem;
   line-height: 2.1rem;
@@ -417,6 +486,28 @@ h2 {
   line-height: 2.1rem;
   font-weight: 500;
   font-style: normal;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 9px 15px 10px;
+  min-width: 175px;
+  margin: 24px 0 24px 32px;
+}
+.menu__btn:hover {
+  color: #c4c4c4;
+}
+
+.services__btn {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  font-style: normal;
+  padding: 15px 25px;
+  background-color: #00868a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.services__btn:hover {
   color: #000000;
 }
 

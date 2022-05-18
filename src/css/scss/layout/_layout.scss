@@ -1,0 +1,11 @@
+.layout-3-column {
+    display: flex;
+}
+
+.layout-3-column_big {
+    @include flex (2);
+    padding: 24px 17px;
+}
+.layout-3-column_small {
+    @include flex(1);
+}
