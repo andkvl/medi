@@ -1,0 +1,53 @@
+.offers {
+}
+.offers__container {
+    padding: 80px 0;
+}
+.offers__body {
+  display: flex;
+  justify-content: space-between;
+}
+.offers__innovations {
+  @include flex(1, 1, 50%);
+  padding-right: 134px;
+}
+.offers__about-us {
+  @include flex(1, 1, 50%);
+}
+
+
+.offers__news {
+}
+.news {
+}
+.news__briefly {
+}
+
+.news__header {
+}
+.news__details {
+}
+.news__title {
+}
+.news__description {
+}
+.special {
+}
+.special__container {
+}
+.special__title {
+}
+.layout-4-column {
+}
+.proposal {
+}
+.proposal__item {
+}
+.proposal__item-top {
+}
+.proposal__btn {
+}
+.proposal__item-bottom {
+}
+.proposal__text {
+}

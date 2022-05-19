@@ -318,12 +318,12 @@ p {
 }
 
 .layout-3-column_big {
-  flex: 2 1 auto;
+  flex: 2 1 50%;
   padding: 24px 17px;
 }
 
 .layout-3-column_small {
-  flex: 1 1 auto;
+  flex: 1 1 25%;
 }
 
 .networks {
@@ -447,6 +447,24 @@ p {
   color: #000000;
 }
 
+.offers__container {
+  padding: 80px 0;
+}
+
+.offers__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers__innovations {
+  flex: 1 1 50%;
+  padding-right: 134px;
+}
+
+.offers__about-us {
+  flex: 1 1 50%;
+}
+
 .button {
   font-size: 1.8rem;
   line-height: 2.1rem;
@@ -454,10 +472,28 @@ p {
   font-style: normal;
   color: #ffffff;
 }
-.button_visually-impaired {
-  min-width: 270px;
+.button_main-color {
   background: #00868a;
   text-transform: uppercase;
+}
+.button_light-color {
+  color: #000000;
+  background-color: #ffffff;
+}
+.button_add-color {
+  background-color: #4fbfa5;
+  padding: 9px 15px 10px;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.button_add-color:hover {
+  color: #000000;
+}
+
+.button__visually-impaired {
+  min-width: 270px;
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 500;
@@ -465,20 +501,20 @@ p {
   padding: 10px 15px 8px 15px;
   display: flex;
 }
-.button_visually-impaired > .btn_icon {
+.button__visually-impaired > .btn_icon {
   width: 26px;
   height: 22px;
   margin-right: 10px;
   background-image: url(/src/images/header/eye.svg);
   background-repeat: no-repeat;
 }
-.button_visually-impaired > .btn-text {
+.button__visually-impaired > .btn-text {
   font-size: 1.4rem;
   line-height: 1.65rem;
   font-weight: 500;
   font-style: normal;
 }
-.button_visually-impaired:hover {
+.button__visually-impaired:hover {
   background: #4fbfa5;
 }
 
@@ -487,8 +523,6 @@ p {
   line-height: 2.1rem;
   font-weight: 500;
   font-style: normal;
-  color: #000000;
-  background-color: #ffffff;
   padding: 9px 15px 10px;
   min-width: 175px;
   margin: 24px 0 24px 32px;
@@ -503,7 +537,6 @@ p {
   font-weight: 500;
   font-style: normal;
   padding: 15px 25px;
-  background-color: #00868a;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
   letter-spacing: 0.05em;

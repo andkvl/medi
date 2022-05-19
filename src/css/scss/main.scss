@@ -28,6 +28,7 @@
 @import "layout/menu";
 @import "layout/header";
 @import "layout/services";
+@import "layout/offers";
 // @import 'layout/navigation';
 // @import 'layout/grid';
 // @import 'layout/footer';
@@ -42,6 +43,7 @@
 // buttons, carousel, cover, dropdown, media, thumbnails, etc.
 
 @import "components/buttons";
+@import "components/innovation";
 
 // 6. Pages
 // Если есть стили, зависящие от страницы, то лучше положить их в отдельный файл.
