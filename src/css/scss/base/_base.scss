@@ -40,7 +40,10 @@ embed {
   max-width: 100%;
 }
 
-// img {display: block; height: auto}
+img {
+  display: block;
+  // height: auto;
+}
 
 // Синюю рамку (a, input, button) убираем при помощи задания outline: none (но её иногда нужно выделять)
 
@@ -134,7 +137,7 @@ body {
 }
 
 h2 {
-  @include font (4.8rem, 7.2rem, 700);
+  @include font(4.8rem, 7.2rem, 700);
 }
 
 p {

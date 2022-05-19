@@ -3,8 +3,27 @@
     background-color: $color-main;
 }
 .innovation__title {
+    @include font (3rem, 4.5rem);
+    margin-left: 39px;
+    margin-bottom: 25px;
 }
+
+.innovation__details {
+    display: flex;
+    align-items: center;
+    margin-left: 38px;
+    margin-bottom: 45px;
+}
+
 .innovation__link {
+    color: $color-light;
+    margin-left: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    @include font (1.6rem, 2.4rem);
+    &:hover {
+        text-decoration: underline;
+    }
 }
 .innovation__image {
 

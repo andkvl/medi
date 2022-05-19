@@ -8,14 +8,34 @@
   justify-content: space-between;
 }
 .offers__innovations {
-  @include flex(1, 1, 50%);
-  padding-right: 134px;
+  @include flex(0, 1, 40.5%);
+  // padding-right: 134px;
 }
 .offers__about-us {
-  @include flex(1, 1, 50%);
+  @include flex(0, 1, 49%);
+  @include font (1.4rem, 2.1rem);
 //   background-image: url(/src/images/innovation/patent__img.jpg);
 }
-
+.about-us__text {
+  color: rgba(0, 0, 0, 0.4);
+  &:before {
+    content: '78';
+    @include font (4.8rem, 7.2rem);
+    margin-right: 20px;
+    // width: 50px;
+    // height: 78px;
+  }
+}
+.about-us__text_big {
+  color: $color-text;
+  @include font (2.8rem, 4.2rem);
+  &:before {
+    content: '20';
+    @include font(9.6rem, 14.4rem);
+    color: $color-main;
+    margin-right: 30px;
+  }
+}
 
 .offers__news {
 }

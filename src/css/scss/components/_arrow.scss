@@ -18,22 +18,24 @@
 }
 .arrow__line {
     @extend %arrow-line;
-    left: 25%;
+    left: 14px;
     top: calc(50% - 0.5px);
 }
 .arrow_left {
-    border-right: 0.5px solid $color-light;
+    border-right-width: 0.5px;
     &:before {
         @extend %arrow-line;
-        width: 10px;
-        left: 0;
-        top: 0;
+        width: 5px;
+        left: 14px;
+        top: 22px;
+        transform: rotate(315deg);
     }
     &:after {
         @extend %arrow-line;
-        width: 10px;
-        left: 0;
-        bottom: 0;
+        width: 5px;
+        left: 14px;
+        bottom: 21px;
+        transform: rotate(45deg);
     }
     &:hover {
         border: 1px solid $color-light;
@@ -41,7 +43,47 @@
       }
 }
 .arrow_right {
+    border-left-width: 0.5px;
+    &:before {
+        @extend %arrow-line;
+        width: 5px;
+        top: 22px;
+        right: 14px;
+        transform: rotate(45deg);
+    }
+    &:after {
+        @extend %arrow-line;
+        width: 5px;
+        bottom: 21px;
+        right: 14px;
+        transform: rotate(135deg);
+    }
     &:hover {
         transform: scale(0.9);
+      }
+}
+
+.innovation__arrow {
+    width: 50px;
+    height: 40px;
+    border-left-width: 1px;
+    & > .arrow__line {
+        width: 20px;
+    }
+    &:before {
+        width: 5px;
+        top: 16px;
+        right: 14px;
+        transform: rotate(45deg);
+    }
+    &:after {
+        width: 5px;
+        bottom: 17px;
+        right: 14px;
+        transform: rotate(135deg);
+    }
+    &:hover {
+        cursor:inherit;
+        transform: none;
       }
 }
