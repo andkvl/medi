@@ -1,4 +1,4 @@
-.button, .promo-service {
+.arrow, .button, .promo-service, .menu__list, .network {
   transition: all 0.3s ease 0s;
 }
 
@@ -336,6 +336,9 @@ p {
   display: flex;
   align-items: center;
 }
+.network img:hover {
+  transform: scale(1.4);
+}
 
 .menu__list {
   display: flex;
@@ -354,7 +357,10 @@ p {
   color: #ffffff;
 }
 .menu__link:first-child {
-  padding-right: 65px;
+  margin-right: 65px;
+}
+.menu__link:hover {
+  text-decoration: underline;
 }
 
 .header__body {
@@ -415,7 +421,7 @@ p {
 }
 
 .services__content {
-  padding-right: 120px;
+  padding-right: 60px;
 }
 
 .services__title {
@@ -427,7 +433,12 @@ p {
   line-height: 2.1rem;
   font-weight: 500;
   font-style: normal;
+  padding-right: 75px;
   padding-bottom: 38px;
+}
+
+.services__arrows {
+  margin: 24px 0px 0px 269px;
 }
 
 .promo-service {
@@ -543,6 +554,56 @@ p {
 }
 .services__btn:hover {
   color: #000000;
+}
+
+.arrow_left:after, .arrow_left:before, .arrow__line {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  height: 1px;
+  width: 30px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow__line {
+  left: 25%;
+  top: calc(50% - 0.5px);
+}
+
+.arrow_left {
+  border-right: 0.5px solid #ffffff;
+}
+.arrow_left:before {
+  width: 10px;
+  left: 0;
+  top: 0;
+}
+.arrow_left:after {
+  width: 10px;
+  left: 0;
+  bottom: 0;
+}
+.arrow_left:hover {
+  border: 1px solid #ffffff;
+  transform: scale(0.9);
+}
+
+.arrow_right:hover {
+  transform: scale(0.9);
+}
+
+.innovation {
+  color: #ffffff;
+  background-color: #00868a;
 }
 
 /*# sourceMappingURL=main.css.map */

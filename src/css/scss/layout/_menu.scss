@@ -3,6 +3,8 @@
 .menu__list {
     display: flex;
     align-items: center;
+    @extend %transition;
+
 }
 .menu__item {
     &:first-child {
@@ -14,7 +16,11 @@
     @include font (1.8rem, 2.7rem);
     color: $color-light;
     &:first-child {
-        padding-right: 65px;
+        // padding-right: 65px;
+        margin-right: 65px;
+    }
+    &:hover {
+        text-decoration: underline;
     }
 }
 

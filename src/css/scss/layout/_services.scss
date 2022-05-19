@@ -9,14 +9,18 @@
   justify-content: space-between;
 }
 .services__content {
-  padding-right: 120px;
+  padding-right: 60px;
 }
 .services__title {
   padding: 133px 0px 20px;
 }
 .services__text {
   @include font(1.4rem, 2.1rem);
+  padding-right: 75px;
   padding-bottom: 38px;
+}
+.services__arrows {
+  margin: 24px 0px 0px 269px;
 }
 .services__promo {
 }

@@ -7,6 +7,10 @@
     border-left: 1px solid $color-border;
     display: flex;
     align-items: center;
+    @extend %transition;
+    & img:hover {
+      transform: scale(1.4);
+    }
   }
   .network_vk {
   }
