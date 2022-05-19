@@ -1,5 +1,6 @@
 .services {
-    background-color: $color-additional;
+  background-color: $color-additional;
+  color: $color-light;
 }
 .services__container {
 }
@@ -16,23 +17,20 @@
 .services__text {
   @include font(1.4rem, 2.1rem);
   padding-bottom: 38px;
-  color: $color-light;
-}
-.services__btn {
 }
 .services__promo {
 }
 .promo-service {
-    padding: 24px 0px;
-    @include font (2.1rem, 3.15rem);
-    color: $color-light;
-    text-align: center;
-    @extend %transition;
-    &:nth-child(odd) {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        background-color: $color-main;
-    }
-    &:hover {
-        color: $color-text;
-    }
+  padding: 24px 0px;
+  @include font(2.1rem, 3.15rem);
+  color: $color-light;
+  text-align: center;
+  @extend %transition;
+  &:nth-child(odd) {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: $color-main;
+  }
+  &:hover {
+    color: $color-text;
+  }
 }
