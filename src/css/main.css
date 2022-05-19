@@ -481,10 +481,17 @@ p {
   line-height: 2.1rem;
   font-weight: 500;
   font-style: normal;
+  padding-top: 34px;
+  background: url(/src/images/innovation/patent__img.jpg) no-repeat 106% 72%;
 }
 
 .about-us__text {
   color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+}
+.about-us__text_spacing {
+  margin-bottom: 15px;
 }
 .about-us__text:before {
   content: "78";
@@ -501,6 +508,7 @@ p {
   line-height: 4.2rem;
   font-weight: 500;
   font-style: normal;
+  margin: 21px 0px 19px;
 }
 .about-us__text_big:before {
   content: "20";
@@ -594,6 +602,10 @@ p {
 
 .innovation__btn {
   margin: 34px 0px 30px 39px;
+}
+
+.about-us__btn {
+  margin-bottom: 30px;
 }
 
 .arrow_right:after, .arrow_right:before, .arrow_left:after, .arrow_left:before, .arrow__line {

@@ -14,10 +14,16 @@
 .offers__about-us {
   @include flex(0, 1, 49%);
   @include font (1.4rem, 2.1rem);
-//   background-image: url(/src/images/innovation/patent__img.jpg);
+  padding-top: 34px;
+  background: url(/src/images/innovation/patent__img.jpg) no-repeat 106% 72%;
 }
 .about-us__text {
   color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  &_spacing {
+    margin-bottom: 15px;
+  }
   &:before {
     content: '78';
     @include font (4.8rem, 7.2rem);
@@ -29,6 +35,7 @@
 .about-us__text_big {
   color: $color-text;
   @include font (2.8rem, 4.2rem);
+  margin: 21px 0px 19px;
   &:before {
     content: '20';
     @include font(9.6rem, 14.4rem);
