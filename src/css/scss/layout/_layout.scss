@@ -9,3 +9,7 @@
 .layout-3-column_small {
     @include flex(1, 1, 25%);
 }
+
+.layout-4-column {
+    display: flex;
+}

@@ -12,8 +12,9 @@
   }
   &_add-color {
     background-color: $color-additional;
-    padding: 9px 15px 10px;
-    @include font (1.8rem, 2.1rem);
+    @extend %btn-padding;
+    // padding: 9px 15px 10px;
+    @include font(1.8rem, 2.1rem);
     &:hover {
       color: $color-text;
     }
@@ -42,7 +43,8 @@
 
 .menu__btn {
   @include font(1.8rem, 2.1rem);
-  padding: 9px 15px 10px;
+  // padding: 9px 15px 10px;
+  @extend %btn-padding;
   min-width: 175px;
   margin: 24px 0 24px 32px;
   &:hover {
@@ -69,4 +71,20 @@
 
 .about-us__btn {
   margin-bottom: 30px;
+}
+
+.news__btn {
+  margin: 35px 0 30px 40px;
+  // padding: 9px 15px 10px;
+  @extend %btn-padding;
+  text-transform: capitalize;
+}
+
+.proposal__btn {
+  // padding: 9px 15px 10px;
+  @extend %btn-padding;
+  background-color: $color-additional;
+  position: absolute;
+  top: 31px;
+  left: 30px;
 }

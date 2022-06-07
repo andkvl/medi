@@ -1,0 +1,28 @@
+.proposal__container {
+}
+
+.proposal {
+    margin-top: -138px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+.proposal__item {
+    position: relative;
+    background-color: $color-main;
+    // display: flex;
+    flex: 0 1 23.6%;
+}
+.proposal__item-top {
+}
+
+.proposal__item-bottom {
+    display: flex;
+    // align-items: center;
+    padding: 25px 30px;
+    // background-color: $color-main;
+}
+.proposal__text {
+    @include font (2.1rem, 3.15rem, 700);
+    color: $color-light;
+}

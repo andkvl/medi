@@ -1,0 +1,41 @@
+.offers__news {
+    margin-top: 80px;
+}
+.news {
+    display: flex;
+    justify-content: space-between;
+}
+.news__briefly {
+    flex: 0 1 40.5%;
+    background-color: $color-additional;
+}
+
+.news__header {
+    padding: 35px 40px;
+    @include font (1.8rem, 2.7rem);
+    color: $color-light;
+}
+
+.news__header-active {
+    background-color: $color-main;
+}
+
+.news__details {
+    flex: 0 1 59.5%;
+    padding: 35px 60px;
+    background-color: $color-bg;
+}
+.news__title {
+    @include font (2.4rem, 3.6rem, 700);
+    margin-bottom: 25px;
+}
+.news__description {
+    @include font (1.4rem, 2.1rem);
+    & > li {
+        list-style: disc;
+        margin-left: 20px;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -63,6 +63,7 @@
       }
 }
 
+.proposal__arrow,
 .innovation__arrow {
     width: 50px;
     height: 40px;
@@ -86,4 +87,8 @@
         cursor:inherit;
         transform: none;
       }
+}
+
+.proposal__arrow {
+    flex: 0 1 74px;
 }
