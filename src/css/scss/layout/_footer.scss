@@ -60,20 +60,42 @@
     margin-bottom: 15px;
 }
 .footer__bottom {
+    margin-top: 44px;
+    border-top: 1px solid #c4c4c4;
 }
 .footer-copy {
+    min-height: 87px;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
 }
 .footer-copy__legislation {
+    border-right: 1px solid #c4c4c4;
 }
 .legislation {
 }
 .legislation__privacy-policy {
+    display: flex;
+    align-items: center;
+    @include font (1.2rem, 1.8rem, 400);
+    a {
+        color: inherit;
+    }
 }
 .legislation__text {
+    flex: 0 1 61.5%;
 }
 .legislation__link {
+    flex: 0 1 39.5%;
+    text-decoration: underline;
+    // white-space: nowrap;
+    &:hover {
+        opacity: 0.4;
+    }
 }
 .footer-copy__item {
+    align-self: center;
+    display: flex;
+    justify-content: center;
 }
 .visually-impaired {
 }

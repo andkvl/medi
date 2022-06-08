@@ -696,6 +696,51 @@ p {
   margin-bottom: 15px;
 }
 
+.footer__bottom {
+  margin-top: 44px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.footer-copy {
+  min-height: 87px;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+
+.footer-copy__legislation {
+  border-right: 1px solid #c4c4c4;
+}
+
+.legislation__privacy-policy {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.legislation__privacy-policy a {
+  color: inherit;
+}
+
+.legislation__text {
+  flex: 0 1 61.5%;
+}
+
+.legislation__link {
+  flex: 0 1 39.5%;
+  text-decoration: underline;
+}
+.legislation__link:hover {
+  opacity: 0.4;
+}
+
+.footer-copy__item {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   font-size: 1.8rem;
   line-height: 2.1rem;
