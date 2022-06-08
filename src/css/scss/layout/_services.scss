@@ -21,6 +21,12 @@
 }
 .services__arrows {
   margin: 24px 0px 0px 369px;
+  @include media-laptop {
+    margin-left: 290px;
+  }
+  @media (max-width: 1250px) {
+    margin: 24px 0;
+  }
 }
 .services__promo {
 }

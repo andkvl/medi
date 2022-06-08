@@ -5,6 +5,9 @@
     margin-top: -135px;
     margin-bottom: 100px;
     justify-content: space-between;
+    @media (max-width: 1050px) {
+        margin-bottom: 50px;
+    }
 }
 
 .proposal__item {

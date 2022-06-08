@@ -91,4 +91,7 @@
 
 .proposal__arrow {
     flex: 0 1 74px;
+    @include media-laptop {
+        display: none;
+    }
 }

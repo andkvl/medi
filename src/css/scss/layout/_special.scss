@@ -1,6 +1,9 @@
 .special {
     background-color: $color-bg;
     padding: 80px 0 198px;
+    @media (max-width: 1050px) {
+        padding-top: 50px;
+    }
 }
 .special__container {
 }

@@ -11,6 +11,9 @@
     & img:hover {
       transform: scale(1.4);
     }
+    @media (max-width: 1200px) {
+      padding: 0 15px;
+    }
   }
   .network_vk {
   }

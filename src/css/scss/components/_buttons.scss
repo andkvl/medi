@@ -53,6 +53,9 @@
   &:hover {
     color: $color-border;
   }
+  @include media-laptop {
+    margin: 24px 0;
+  }
 }
 
 .services__btn {

@@ -1,6 +1,9 @@
 .header {
 }
 .header__container {
+  @media (max-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .header__body {
@@ -10,6 +13,11 @@
   // align-items: center;
   border-left: 1px solid $color-border;
   border-right: 1px solid $color-border;
+  @include media-laptop {
+    justify-content: center;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .header__logo {
@@ -17,6 +25,9 @@
   padding: 0px 35px;
   align-self: center;
   // @include flex (1);
+  @include media-laptop {
+    padding: 0px 15px;
+  }
 }
 .header__title {
 }
@@ -41,6 +52,9 @@
   border-left: 1px solid $color-border;
   display: flex;
   align-items: center;
+  @include media-laptop {
+    padding: 0px 10px;
+  }
 }
 .contact-header__link {
   // display: inline-block;
@@ -63,8 +77,6 @@
 
 }
 .visually-impaired {
-}
-.button {
 }
 .visually-impaired__btn {
 }
