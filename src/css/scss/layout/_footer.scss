@@ -68,6 +68,10 @@
     @media (max-width: 1200px) {
         margin: 0px -15px;
     }
+    @include add-size {
+        margin: 0;
+        border: none;
+    }
 }
 .footer-copy {
     min-height: 87px;
@@ -76,12 +80,21 @@
     @media (max-width: 1200px) {
         border: none;
     }
+    @include add-size {
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+    }
 }
 .footer-copy__legislation {
     border-right: 1px solid #c4c4c4;
     @media (max-width: 1200px) {
         border: none;
         flex: 0 1 50%;
+    }
+    @include add-size {
+        flex: 0 1 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 .legislation {
@@ -103,6 +116,10 @@
 }
 .legislation__text {
     flex: 0 1 61.5%;
+    @include add-size {
+        flex: 0 1 auto;
+        margin-right: 15px;
+    }
 }
 .legislation__link {
     flex: 0 1 39.5%;
@@ -110,6 +127,10 @@
     // white-space: nowrap;
     &:hover {
         opacity: 0.4;
+    }
+    @include add-size {
+        flex: 0 1 auto;
+        white-space: nowrap;
     }
 }
 .footer-copy__item {
