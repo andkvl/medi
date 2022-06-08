@@ -1,0 +1,81 @@
+.footer {
+}
+.footer__container {
+}
+.footer__top {
+    display: flex;
+}
+.footer__top-left {
+    flex: 1 1 80%;
+}
+.top-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.top-left__column {
+    flex: 0 1 29.5%;
+}
+.top-left__title {
+    @include font (2.1rem, 3.15rem, 700);
+    margin-bottom: 20px;
+}
+.top-left__links {
+    @include font (1.4rem, 2.1rem);
+    color: $color-text;
+    & > li {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+    a {
+        color: inherit;
+        @extend %transition;
+        &:hover {
+            text-decoration: underline;
+            opacity: 0.4;
+        }
+    }
+}
+.footer__top-right {
+    flex: 1 1 25%;
+}
+.top-right {
+    display: flex;
+    flex-direction: column;
+}
+.top-right__title {
+    @include font (1.1rem, 1.65rem);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 10px;
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+}
+.top-right__text {
+    @include font (2.1rem, 3.15rem, 700);
+    margin-bottom: 15px;
+}
+.footer__bottom {
+}
+.footer-copy {
+}
+.footer-copy__legislation {
+}
+.legislation {
+}
+.legislation__privacy-policy {
+}
+.legislation__text {
+}
+.legislation__link {
+}
+.footer-copy__item {
+}
+.visually-impaired {
+}
+.footer__social {
+}

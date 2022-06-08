@@ -5,6 +5,9 @@
   &_main-color {
     background: $color-main;
     text-transform: uppercase;
+    &:hover {
+      color: $color-text;
+    }
   }
   &_light-color {
     color: $color-text;
@@ -60,7 +63,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   &:hover {
-    color: $color-text;
+    // color: $color-text;
     // background-color: $color-additional;
   }
 }
@@ -87,4 +90,11 @@
   position: absolute;
   top: 31px;
   left: 30px;
+}
+.footer__btn {
+  padding: 15px 25px 14px;
+  @include font (1.4rem, 1.65rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  max-width: 165px;
 }
