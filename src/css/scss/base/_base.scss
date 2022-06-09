@@ -108,6 +108,10 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
+  @include add-size {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 // скрытие h1

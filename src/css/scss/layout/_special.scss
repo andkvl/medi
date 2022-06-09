@@ -11,4 +11,10 @@
 .special__title {
     text-align: center;
     color: $color-main;
+    @include add-size {
+        @include font (4.4rem, 6.3rem, 700);
+    }
+    @include media-tablet {
+        @include font (3rem, 4.5rem, 700);
+    }
 }

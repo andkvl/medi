@@ -4,9 +4,16 @@
 }
 .footer__top {
     display: flex;
+    @include add-size {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 .footer__top-left {
     flex: 1 1 80%;
+    @include add-size {
+        flex: 1 1 100%;
+    }
 }
 .top-left {
     display: flex;
@@ -15,10 +22,17 @@
 }
 .top-left__column {
     flex: 0 1 29.5%;
+    @include media-mobile {
+        flex: 0 1 49%;
+    }
 }
 .top-left__title {
-    @include font (2.1rem, 3.15rem, 700);
+    @include font (1.6rem, 2.4rem, 700);
     margin-bottom: 20px;
+    @media (max-width: 600px) {
+        @include font (2.1rem, 3.15rem, 700);
+        margin-bottom: 10px;
+    }
 }
 .top-left__links {
     @include font (1.4rem, 2.1rem);
@@ -27,6 +41,9 @@
         margin-bottom: 15px;
         &:last-child {
             margin-bottom: 30px;
+            @include media-mobilesmall {
+                margin-bottom: 20px;
+            }
         }
     }
     a {
@@ -37,13 +54,22 @@
             opacity: 0.4;
         }
     }
+    @media (max-width: 600px) {
+        @include font (1rem, 1.5rem);
+    }
 }
 .footer__top-right {
     flex: 1 1 25%;
+    @include add-size {
+        flex: 0 1 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 .top-right {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .top-right__title {
     @include font (1.1rem, 1.65rem);
@@ -53,6 +79,9 @@
     margin-bottom: 10px;
     &:not(:first-child) {
         margin-top: 30px;
+        @media (max-width: 505px) {
+            margin-top: 15px;
+        }
     }
 }
 .top-right__text {
@@ -96,6 +125,10 @@
         display: flex;
         justify-content: center;
     }
+    @media (max-width: 505px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 .legislation {
     @media (max-width: 1250px) {
@@ -113,12 +146,18 @@
     @media (max-width: 1000px) {
         @include font (1rem, 1.5rem, 400);
     }
+    @media (max-width: 505px) {
+        flex-wrap: wrap;
+    }
 }
 .legislation__text {
     flex: 0 1 61.5%;
     @include add-size {
         flex: 0 1 auto;
         margin-right: 15px;
+    }
+    @media (max-width: 505px) {
+        margin: 10px 0;
     }
 }
 .legislation__link {
@@ -149,5 +188,9 @@
             border: none;
         }
         flex: 0 1 auto;
+    }
+    @media (max-width: 505px) {
+        // margin: 10px 0;
+        padding: 10px 0px;
     }
 }

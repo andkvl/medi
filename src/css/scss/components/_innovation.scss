@@ -6,6 +6,10 @@
     @include font (3rem, 4.5rem);
     margin-left: 39px;
     margin-bottom: 25px;
+    @include add-size {
+        @include font (2rem, 3rem);
+        margin-right: 10px;
+    }
 }
 
 .innovation__details {

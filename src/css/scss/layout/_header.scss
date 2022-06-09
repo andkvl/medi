@@ -15,9 +15,15 @@
   border-right: 1px solid $color-border;
   @include media-laptop {
     justify-content: center;
+  }
+  @include add-size {
     border-left: none;
     border-right: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
   }
+
 }
 
 .header__logo {
@@ -40,11 +46,18 @@
 .header__contacts {
   // padding: 36px 30px 35px;
   // @include flex (1);
+
 }
 .contact-header {
   display: flex;
   white-space: nowrap;
   // align-items: center;
+  @include add-size {
+    flex: 1 1 auto;
+    margin: 10px 0;
+    order: 3;
+    justify-content: center;
+  }
 }
 .contact-header__item {
   // margin: 0px 30px;
@@ -54,6 +67,9 @@
   align-items: center;
   @include media-laptop {
     padding: 0px 10px;
+  }
+  @include add-size {
+    border-left: none;
   }
 }
 .contact-header__link {
@@ -72,6 +88,9 @@
       background-position: center;
       margin-left: 15px;
       border-radius: 50%;
+      @include add-size {
+        margin-left: 4px;
+      }
     }
   }
 

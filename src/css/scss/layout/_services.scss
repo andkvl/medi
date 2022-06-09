@@ -7,17 +7,41 @@
 .services__body {
   display: flex;
   justify-content: space-between;
+  @include add-size {
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
 }
 .services__content {
   padding-right: 60px;
+  @media (max-width: 1050px) {
+    padding-right: 10px;
+  }
+  @include add-size {
+    padding-right: 0;
+  }
 }
 .services__title {
   padding: 133px 0px 20px;
+  @include add-size {
+    padding-top: 20px;
+  }
+  @include media-mobile {
+    @include font(3.6rem, 5.4rem);
+    padding: 10px 0;
+  }
 }
+
 .services__text {
   @include font(1.4rem, 2.1rem);
   padding-right: 75px;
   padding-bottom: 38px;
+  @include add-size {
+    padding: 0 0 20px;
+  }
+  @include media-mobile {
+    @include font(1rem, 1.5rem);
+  }
 }
 .services__arrows {
   margin: 24px 0px 0px 369px;
@@ -30,6 +54,11 @@
 }
 .services__promo {
 }
+
+.promo-services {
+  flex-wrap: wrap;
+}
+
 .promo-service {
   padding: 24px 0px;
   @include font(2.1rem, 3.15rem);
@@ -42,5 +71,11 @@
   }
   &:hover {
     color: $color-text;
+  }
+  @include add-size {
+    @include font(1.6rem, 2.4rem);
+  }
+  @media (max-width: 600px) {
+    flex: 1 1 100%;
   }
 }

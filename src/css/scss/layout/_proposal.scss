@@ -8,6 +8,11 @@
     @media (max-width: 1050px) {
         margin-bottom: 50px;
     }
+    @include add-size {
+        margin-top: -160px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 
 .proposal__item {
@@ -15,6 +20,9 @@
     background-color: $color-main;
     // display: flex;
     flex: 0 1 23.6%;
+    @include add-size {
+        margin: 0 15px 5px;
+    }
 }
 .proposal__item-top {
 }

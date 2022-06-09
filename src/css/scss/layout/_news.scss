@@ -1,5 +1,11 @@
 .offers__news {
     margin-top: 80px;
+    @include add-size {
+        margin-top: 50px;
+    }
+    @include media-tablet {
+        margin-top: 30px;
+    }
 }
 .news {
     display: flex;
@@ -8,12 +14,22 @@
 .news__briefly {
     flex: 0 1 40.5%;
     background-color: $color-additional;
+    @include media-tablet {
+        flex: 1 1 100%;
+    }
 }
 
 .news__header {
     padding: 35px 40px;
     @include font (1.8rem, 2.7rem);
     color: $color-light;
+    @include media-tablet {
+        padding: 15px 40px;
+        @include font (1.6rem, 2.4rem);
+    }
+    @include media-mobile {
+        @include font (1.4rem, 2.1rem);
+    }
 }
 
 .news__header-active {
@@ -24,6 +40,9 @@
     flex: 0 1 59.5%;
     padding: 35px 60px;
     background-color: $color-bg;
+    @include media-tablet {
+        display: none;
+    }
 }
 .news__title {
     @include font (2.4rem, 3.6rem, 700);
