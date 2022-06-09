@@ -633,7 +633,7 @@ p {
   width: 20px;
   height: 20px;
   background-color: #4fbfa5;
-  background-image: url(/src/images/header/triangle.svg);
+  background-image: url(../../src/images/header/triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 15px;
@@ -1559,7 +1559,7 @@ p {
   width: 26px;
   height: 22px;
   margin-right: 10px;
-  background-image: url(/src/images/header/eye.svg);
+  background-image: url(../../src/images/header/eye.svg);
   background-repeat: no-repeat;
 }
 
