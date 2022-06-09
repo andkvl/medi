@@ -17,6 +17,9 @@
     align-items: center;
     margin-left: 38px;
     margin-bottom: 45px;
+    @media (max-width: 600px) {
+        margin-bottom: 20px;
+    }
 }
 
 .innovation__link {
@@ -27,6 +30,9 @@
     @include font (1.6rem, 2.4rem);
     &:hover {
         text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+        margin-left: 0;
     }
 }
 .innovation__image {

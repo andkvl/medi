@@ -1,5 +1,3 @@
-.header {
-}
 .header__container {
   @media (max-width: 1200px) {
     padding: 0;
@@ -39,18 +37,7 @@
     justify-content: center;
   }
 }
-.header__title {
-}
-.visuallyhidden {
-}
-.logo {
-}
-.logo-object {
-}
-.header__contacts {
-  // padding: 36px 30px 35px;
-  // @include flex (1);
-}
+
 .contact-header {
   display: flex;
   white-space: nowrap;
